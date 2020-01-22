@@ -11,14 +11,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        LoggerImpl.getLogger()?.initialize(applicationContext, "asd")
-
-        send_btn.setOnClickListener {
-            LEventDatabase.databaseWriteExecutor.execute {
-                LoggerImpl.getLogger()?.logEvent(send_btn.text.toString())
-            }
-
-        }
+//        LoggerImpl.getLogger()?.initialize(applicationContext, "asd")
+//
+//        send_btn.setOnClickListener {
+//            LEventDatabase.databaseWriteExecutor.execute {
+//                LoggerImpl.getLogger()?.logEvent(send_btn.text.toString())
+//            }
+//
+//        }
 
     }
 }
